@@ -28,7 +28,7 @@ const Login = () => {
             e.preventDefault()
             const response = await axios.post("/login",loginData)
             if(response.data.success==true){
-                toast.success("Login Success")
+                toast.success("Login Success",{toastId:"id"})
                 localStorage.setItem("token",response.data.token)
                 const tokenStorage = localStorage.getItem("token")
                 console.log(response)
