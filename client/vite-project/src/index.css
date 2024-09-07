@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input{
+  @apply border border-black rounded-lg p-1 mt-10 w-[20%] self-center;
+}
+.date-input{
+  @apply border border-black rounded-lg p-1 mt-10 w-[7%] self-center;
+}
+.login-input{
+  @apply border border-black rounded-lg p-1 mt-5;
+}
+.search-input{
+  @apply border h-[25px] border-black rounded-lg p-0 mt-2 mb-1 absolute left-[66%] top-[10px] w-[100px];
+}
