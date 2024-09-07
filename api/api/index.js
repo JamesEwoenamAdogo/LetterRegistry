@@ -14,7 +14,7 @@ const app = express();
 const port = process.env.PORT
 
 app.use(cors({
-    origin:"https://letter-registry-7o28.vercel.app/"
+    origin:"https://letter-registry-7o28.vercel.app"
 }))
 app.use(express.json())
 app.listen(port ,()=>{
