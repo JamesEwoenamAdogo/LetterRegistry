@@ -19,6 +19,7 @@ app.listen(port ,()=>{
     console.log(`Server running at ${port}`)
 })
 mongoose.connect(process.env.MONGO_URL).then(()=>{console.log("Database connected")})
+app.get("/test",(req,res)=>{res.send("Test Route")})
 
 app.post("/add-registry",async(req,res)=>{
     try{
